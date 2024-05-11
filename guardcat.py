@@ -22,8 +22,11 @@ silltext = customtkinter.CTkLabel(main, text="welcome to guardcat :3", font=('Se
 silltext.grid(row=0, column=1, padx=10  , pady=20)
 startbutton = customtkinter.CTkButton(main, text="Start")
 startbutton.grid(row=1, column=0, padx=50, pady=40)
-startbutton = customtkinter.CTkButton(main, text="Stop")
-startbutton.grid(row=1, column=1, padx=50, pady=40)
+stoptbutton = customtkinter.CTkButton(main, text="Stop")
+stoptbutton.grid(row=1, column=1, padx=50, pady=40)
+startbutton = customtkinter.CTkButton(main, text="Settings")
+startbutton.grid(row=3, column=1, padx=50, pady=40)
+
 
 
 
