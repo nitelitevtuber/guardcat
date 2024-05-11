@@ -27,6 +27,9 @@ stoptbutton.grid(row=1, column=1, padx=50, pady=40)
 startbutton = customtkinter.CTkButton(main, text="Settings")
 startbutton.grid(row=3, column=1, padx=50, pady=40)
 
+class settingsmenu:
+    toplevel = customtkinter.CTkToplevel(main)
+
 
 
 
