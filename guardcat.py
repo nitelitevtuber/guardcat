@@ -15,6 +15,9 @@ main.geometry("520x720")
 def settingsmenu():
         toplevel = customtkinter.CTkToplevel(main)
         toplevel.geometry("520x720")
+        toplevel.grab_set()
+
+        
 
 # THE FUCKING CAT AAAAAAAAA
 creature = customtkinter.CTkImage(dark_image=Image.open('creature.jpg'), size=(210,120))
