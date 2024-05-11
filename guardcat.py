@@ -12,7 +12,9 @@ main = customtkinter.CTk()
 main.title("guardcat")
 main.geometry("520x720")
 
-
+class settingsmenu:
+    toplevel = customtkinter.CTkToplevel(main)
+    toplevel.geometry("520x720")
 
 # THE FUCKING CAT AAAAAAAAA
 creature = customtkinter.CTkImage(dark_image=Image.open('creature.jpg'), size=(210,120))
@@ -24,11 +26,11 @@ startbutton = customtkinter.CTkButton(main, text="Start")
 startbutton.grid(row=1, column=0, padx=50, pady=40)
 stoptbutton = customtkinter.CTkButton(main, text="Stop")
 stoptbutton.grid(row=1, column=1, padx=50, pady=40)
-startbutton = customtkinter.CTkButton(main, text="Settings")
+startbutton = customtkinter.CTkButton(main, text="Settings", command=settingsmenu)
 startbutton.grid(row=3, column=1, padx=50, pady=40)
 
-class settingsmenu:
-    toplevel = customtkinter.CTkToplevel(main)
+
+
 
 
 
