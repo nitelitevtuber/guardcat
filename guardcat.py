@@ -1,4 +1,5 @@
 import customtkinter
+from customtkinter import filedialog
 from aiomcrcon import Client
 from PIL import Image
 import asyncio
@@ -13,9 +14,13 @@ main.title("guardcat")
 main.geometry("520x720")
 
 def settingsmenu():
-        toplevel = customtkinter.CTkToplevel(main)
-        toplevel.geometry("520x720")
-        toplevel.grab_set()
+        settingsmenu = customtkinter.CTkToplevel(main)
+        silltext = customtkinter.CTkLabel(settingsmenu, text="Server Directory ", font=('Segoe UI Bold', 15))
+        silltext.grid(row=0, column=1, padx=15  , pady=20)
+        
+
+        settingsmenu.geometry("520x720")
+        settingsmenu.grab_set()
 
         
 
