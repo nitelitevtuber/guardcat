@@ -16,8 +16,11 @@ main.geometry("520x720")
 def settingsmenu():
         settingsmenu = customtkinter.CTkToplevel(main)
         silltext = customtkinter.CTkLabel(settingsmenu, text="Server Directory ", font=('Segoe UI Bold', 15))
-        silltext.grid(row=0, column=1, padx=15  , pady=20)
-        
+        silltext.grid(row=0, column=1, padx=30  , pady=35)
+        directoryselect = customtkinter.CTkTextbox(settingsmenu, width=20, height=30)
+        directoryselect.insert("0.0", "Select or Type in your servers directory")
+        directoryselect.grid(row=1, column=1, padx=50 , pady=20)
+
 
         settingsmenu.geometry("520x720")
         settingsmenu.grab_set()
