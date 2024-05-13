@@ -20,9 +20,9 @@ def settingsmenu():
         directoryselect = customtkinter.CTkTextbox(settingsmenu, width=286, height=33)
         directoryselect.insert("0.0", "Select or Type in your servers directory")
         directoryselect.grid(row=1, column=1, padx=50 , pady=5)
+        selectserverdirectorybutton = customtkinter.CTkButton(main, text="Select Folder")
+        selectserverdirectorybutton.grid(row=1, column=1, padx=50 , pady=5)
         settingsmenu.title("guardcat settings")
-
-
         settingsmenu.geometry("520x720")
         settingsmenu.grab_set()
 
